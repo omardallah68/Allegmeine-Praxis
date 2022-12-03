@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="style copy.css">
+    <!--<link rel="stylesheet" href="style1.css">-->
+    <title>Allgemeine Praxis</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo" id="logo">Allgemeine Praxis</a>
+        <nav>
+            <ul>
+                <li><a href="#" class="home1">Home</a></li>
+                <div class="main-ser"><li><details><summary><a href="#services" class="services-nav">Services</a></summary>
+                    <div class="servicess"><ul>
+                    <li><a href="#" class="details">Termin buchen</a></li>
+                    <li><a href="#" class="details">Rezept bestellen</a></li>
+                    <li><a href="#" class="details">Überweisung bestellen</a></li>
+                    <li><a href="#" class="details">Laborwerte anzeigen</a></li>
+                    <li><a href="#" class="details">Videosprechstunde buchen</a></li>
+                    <li><a href="#" class="details">häfige Fragen anzeigen</a></li>
+                    <li><a href="#" class="details">Nachricht schicken</a></li>
+                </ul></div></details></li></div>
+                <li><a href="#kalender">Kalender</a></li>
+                <li><a href="#karriere">Karriere</a></li>
+                <li><a href="#kontakt">Kontakt</a></li>
+                <li><a href="#über-uns">Über uns</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--
+
+    <div class="servicess"><ul>
+        <li><a href="#">Termin buchen</a></li>
+        <li><a href="#">Rezept bestellen</a></li>
+        <li><a href="#">Überweisung bestellen</a></li>
+        <li><a href="#">Nachricht schicken</a></li>
+        <li><a href="#">Laborwerte anzeigen</a></li>
+        <li><a href="#">Videosprechstunde buchen</a></li>
+        <li><a href="#">häfige Fragen anzeigen</a></li>
+        <li><a href="#">Nachricht schicken</a></li>
+    </ul></div>
+
+    -->
+
+    <section class="home" id="section">
+        <div class="zeichen"><h3><span>Beste Spezialisten</span>, <span>Beste Behandlung</span>, <span>Beste Ausstattung</span></h3></div>
+        <h2 class="willkommen">Guten Tag, <br><span>Herzlichen Willkommen bei der <a href="#" class="logo">Allgemeine Praxis</a></span></h2>
+        <div class="zitat-div">
+            <!--<i class="fa-solid fa-thumbtack"></i>-->
+            <i class="fa-solid fa-map-pin"></i>
+            <h1 class="zitat-title">Zitat des Tages</h1>
+            <h3 class="zitat">"Die Vorbeugung ist besser als die Behandlung"</h3>
+        </div>
+        <!--<div class="imgs">
+            <img  class="home-img1" src="1.svg" alt="Doctor-Photo1">
+            <img  class="home-img2" src="2.svg" alt="Doctor-Photo2">
+        </div>-->
+    </section>
+
+
+    
+
+    <section class="services" id="services" id="section">
+        
+        <h1 class="title">Services</h1>
+        <div class="content">
+
+        <div class="cards">
+            <div class="card-d">
+                <div class="icon"><i class="fa-regular fa-calendar-check"></i></div>
+                <a href="termin" class="card">Termin vereinbaren</a>
+            </div>
+            <div class="card-d">
+                <div class="icon"><i class="fa-solid fa-pills"></i></div>
+                <a href="rezept" class="card">Rezept Bestellen</a>
+            </div>
+            <div class="card-d">
+                <div class="icon"><i class="fa-regular fa-hand-point-right"></i></div>
+                <a href="ueberweisung" class="card">Überweisung Bestellen</a>
+            </div>
+            <div class="card-d">
+                <div class="icon"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
+                <a href="rezept" class="card">Laborwerte anzeigen</a>
+            </div>
+            <div class="card-d">
+                <div class="icon"><i class="fa-solid fa-video"></i></div>
+                <a href="ueberweisung" class="card">Videosprechstunde buchen</a>
+            </div>
+            <div class="card-d">
+                <div class="icon"><i class="fa-solid fa-question"></i></div>
+                <a href="termin" class="card">häfige Fragen anzeigen</a>
+            </div>
+            <div class="card-d">
+                <div class="icon"><i class="fa-solid fa-message"></i></div>
+                <a href="rezept" class="card">Nachricht schicken</a>
+            </div>
+        </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="kalender" id="kalender" id="section">
+        <h1 class="title">Kalender</h1>
+
+
+
+
+        <div id="seitenkopf">
+            <h1>Heute ist der: Samstag 31.12.2022</h1>
+        </div>
+        <div id="kalenderblatt">
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="8">Dezember 2022</th>
+                    </tr>
+                    <tr>
+                        <th class="woche">Kw</th>
+                        <th class="woche">Mo</th>
+                        <th class="woche">Di</th>
+                        <th class="woche">Mi</th>
+                        <th class="woche">Do</th>
+                        <th class="woche">Fr</th>
+                        <th class="woche">Sa</th>
+                        <th class="woche">So</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="woche">44</td>
+                        <td class="alt">31</td>
+                        <td id="day" name="1" onclick="time()">1</td>
+                        <td id="day" name="2" onclick="time()">2</td>
+                        <td id="day" name="3" onclick="time()">3</td>
+                        <td id="day" name="4" onclick="time()">4</td>
+                        <td id="day" name="5" onclick="time()">5</td>
+                        <td id="day" name="6" onclick="time()">6</td>
+                    </tr>
+                    <tr>
+                        <td class="woche">45</td>
+                        <td id="day" name="7" value="7" onclick="time()">7</td>
+                        <td id="day" name="8" onclick="time()">8</td>
+                        <td id="day" onclick="time()">9</td>
+                        <td id="day" onclick="time()">10</td>
+                        <td id="day" onclick="time()">11</td>
+                        <td id="day" onclick="time()">12</td>
+                        <td id="day" onclick="time()">13</td>
+                    </tr>
+                    <tr>
+                        <td class="woche">46</td>
+                        <td id="day" onclick="time()">14</td>
+                        <td id="day" onclick="time()">15</td>
+                        <td id="day" onclick="time()">16</td>
+                        <td id="day" onclick="time()">17</td>
+                        <td id="day" onclick="time()">18</td>
+                        <td id="day" onclick="time()">19</td>
+                        <td id="day" onclick="time()">20</td>
+                    </tr>
+                    <tr>
+                        <td class="woche">47</td>
+                        <td id="day" onclick="time()">21</td>
+                        <td id="day" onclick="time()">22</td>
+                        <td id="day" onclick="time()">23</td>
+                        <td id="day" onclick="time()">24</td>
+                        <td id="day" onclick="time()">25</td>
+                        <td id="day" onclick="time()">26</td>
+                        <td id="day" onclick="time()">27</td>
+                    </tr>
+                    <tr>
+                        <td class="woche">48</td>
+                        <td id="day" onclick="time()">28</td>
+                        <td id="day" onclick="time()">29</td>
+                        <td id="day" onclick="time()">30</td>
+                        <td id="day" onclick="time()" class="now">31</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="times"></div>
+        <div id="timeDay"></div>
+
+
+
+
+
+    </section>
+
+
+    <section class="karriere" id="karriere" id="section">
+        <h1 class="title">Karriere</h1>
+
+
+
+        <div class="content">
+
+            <div class="cards">
+                <div class="card-d">
+                    <div class="icon"><i class="fa-solid fa-stethoscope"></i></div>
+                    <a href="termin" class="card">Arzt / Ärztin</a>
+                </div>
+                <div class="card-d">
+                    <div class="icon"><i class="fa-regular fa-user"></i></div>
+                    <a href="rezept" class="card">Arzthelfer / Arzthelferin</a>
+                </div>
+                <div class="card-d">
+                    <div class="icon"><i class="fa-solid fa-user"></i></div>
+                    <a href="ueberweisung" class="card">Auszubildender / Auszubildenderin</a>
+                </div>
+
+            </div>
+    
+            </div>
+    
+
+
+
+    </section>
+
+
+    <section class="kontakt" id="kontakt" id="section">
+        <h1 class="title">Kontakt</h1>
+
+
+
+        <div class="content">
+
+            <div class="cards">
+                <div class="card-d">
+                    <div class="icon"><i class="fa-solid fa-phone"></i></div>
+                    <a href="termin" class="card">Unsere Telefonnummer</a>
+                </div>
+                <div class="card-d">
+                    <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
+                    <a href="rezept" class="card">Unsere Addresse</a>
+                </div>
+                <div class="card-d">
+                    <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+                    <a href="ueberweisung" class="card">Unser E-Mailaddresse</a>
+                </div>
+            </div>
+    
+            </div>
+    
+
+
+
+    </section>
+
+    
+    <section class="über-uns" id="über-uns" id="section">
+        <h1 class="title">Über uns</h1>
+
+
+
+
+        <div class="content">
+
+            <div class="cards">
+                <div class="card-d">
+                    <div class="icon"><i class="fa-solid fa-person"></i></div>
+                    <a href="termin" class="card">Khaled</a>
+                </div>
+                <div class="card-d">
+                    <div class="icon"><i class="fa-solid fa-person-dress"></i></div>
+                    <a href="rezept" class="card">Paula</a>
+                </div>
+                <div class="card-d">
+                    <div class="icon"><i class="fa-solid fa-person"></i></div>
+                    <a href="ueberweisung" class="card">Manar</a>
+                </div>
+                <div class="card-d">
+                    <div class="icon"><i class="fa-solid fa-person-dress"></i></div>
+                    <a href="termin" class="card">Laura</a>
+                </div>
+                <div class="card-d">
+                    <div class="icon"><i class="fa-solid fa-person"></i></div>
+                    <a href="rezept" class="card">Basel</a>
+                </div>
+                <div class="card-d">
+                    <div class="icon"><i class="fa-solid fa-person-dress"></i></div>
+                    <a href="ueberweisung" class="card">Mona</a>
+                </div>
+                <div class="card-d">
+                    <div class="icon"><i class="fa-solid fa-person"></i></div>
+                    <a href="termin" class="card">Hasan</a>
+                </div>
+                <div class="card-d">
+                    <div class="icon"><i class="fa-solid fa-person-dress"></i></div>
+                    <a href="rezept" class="card">Rana</a>
+                </div>
+            </div>
+    
+            </div>
+    
+
+
+
+
+    </section>
+
+
+    <script src="script.js"></script>
+    <script src="JS/script.js"></script>
+    <script src="JS/script1.js"></script>
+</body>
+<a href="https://storyset.com/office">Office illustrations by Storyset</a>
+</html>

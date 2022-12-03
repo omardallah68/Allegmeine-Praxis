@@ -1,0 +1,593 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Teko:wght@300;400;500;600;700&display=swap');
+
+:root{
+    --color1:#000;
+    --color2:#08270f;
+    --color3:#20410d;
+    --color4:#226113;
+    --color5:#1d7a1d;
+    --color6:#33af4e;
+    --color7:#37c956;
+    --color8:#41db48;
+    --color9:#58ff52;
+    --color10:#ffffff;
+
+    --color11:#e4e4e4;
+    --color12:#072905;
+    --color13:#196d0e;
+    --color14:#15351c;
+    --color15:#43ad40;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    font-family: 'Patrick Hand', 'cursive';
+}
+
+
+
+header{
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    z-index: 100;
+    background-color: var(--color10)
+}
+
+#logo{
+    padding: 20px;
+    margin: 20px;
+    padding-left: 60px;
+    margin-top: 5px;
+    color: var(--color5);
+    text-shadow: 1px 1px var(--color1);
+    transition: 0.4s ease-in-out;
+}
+
+#logo:hover{
+    color: var(--color15);
+    transform: scale(1.1);
+}
+
+.logo{
+    color: var(--color7);
+    font-size: 36px;
+    text-decoration: none;
+    transition: 0.4s ease-in-out;
+}
+
+nav>ul>li, nav>ul>.main-ser>li{
+    display: inline-block;
+    list-style-type: none;
+    margin-top: 5px;
+    padding-right: 60px;
+}
+
+.home1{
+    display: flex;
+}
+
+.main-ser{
+    display: inline-block;
+}
+
+summary{
+    list-style: none;
+}
+
+summary::after{
+    content: ">";
+    font-weight: 600;
+    color: var(--color3);
+}
+
+nav>ul>li>a, nav>ul>.main-ser>li>a, .services-nav{
+    font-size: 20px;
+    text-decoration: none;
+    color: var(--color3);  
+    padding: 10px;
+    border-radius: 20px;     
+    transition: 0.4s ease-in-out; 
+}
+
+nav>ul>li>a:hover, nav>ul>.main-ser>li>a:hover, .services-nav:hover{
+    background-color: var(--color15);
+    color: var(--color10);
+}
+.services-nav{
+    text-decoration: none;
+}
+
+.servicess{
+    position: relative;
+    /*display: none;*/
+    /*visibility: hidden;*/
+    transition: 0.4s ease-in-out;
+}
+
+.servicess ul{
+    position: absolute;
+    padding: 10px;
+    top: 40px;
+    z-index: 50;
+    background-color: #ffffffee;
+    /*visibility: hidden;*/
+    transition: 0.4s ease-in-out;
+    min-width: 190px;
+}
+
+.servicess>ul>li{
+    list-style-type: none;
+    padding: 5px;
+    /*border-radius: 20px;*/
+    color: var(--color3);
+}
+
+.servicess>ul>li>a{
+    color: var(--color3);
+}
+
+.servicess>ul>li>a{
+
+    text-decoration: none;
+    transition: 0.4s ease-in-out;
+}
+
+
+/*
+.main-ser:hover .servicess>ul>li{
+    visibility: visible;
+}*/
+
+/*.servicess>li>a:hover{
+    color: var(--color2);
+}*/
+
+.servicess ul li:hover{
+    background-color: var(--color15);
+    font: var(--color10);
+}
+
+.servicess ul li a:hover{
+    color: var(--color10);
+}
+
+
+section{
+    background-image: linear-gradient(90deg, var(--color14) ,var(--color15));
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px 200px;
+}
+
+
+.home{
+    position: relative;
+    /*background-color: var(--color2);
+    background-image: linear-gradient(90deg,#15351c,#43ad40);*/
+    letter-spacing: 3px;
+    z-index: auto;
+    
+    background-image: url(1.svg);
+    background-repeat: no-repeat;
+    background-size: 600px;
+    background-position: 0% 100%;
+}
+
+.imgs{
+    position: relative;
+}
+
+.home-img1{
+    position: absolute;
+    width: 500px;
+    left: 5%;
+    margin-top: 8%;
+}
+
+.home-img2{
+    width: 500px;
+    position: absolute;
+    right: 5%;
+    margin-top: 10%;
+}
+
+.title{
+    text-align: center;
+    font-size: 35px;
+    letter-spacing: 3px;
+    color: var(--color10);
+    margin-top: 100px;
+}
+
+.zeichen{
+    position: relative;
+}
+
+.zeichen h3{
+    position: absolute;
+    color: var(--color10);
+    top: 100px;
+    left: 25%;
+    text-align: center;
+    font-size: 25px;
+}
+
+.zeichen>h3>span{
+    transition: 0.4s ease-in-out;
+}
+
+.zeichen>h3>span:hover{
+    font-size: 30px;
+    color :var(--color10);
+    text-shadow: 3px 3px var(--color12);
+}
+
+.willkommen{
+    color: var(--color10);
+    margin-top: 30vh;
+    font-size: 26px;
+    transition: 0.4s ease-in-out;
+}
+
+.willkommen:hover{
+    font-size: 30px;
+}
+
+.willkommen:hover .logo{
+    font-size: 40px;
+    color: var(--color10);
+    text-shadow: 3px 3px var(--color12);
+}
+
+.zitat-div{
+    position: absolute;
+    max-width: 400px;
+    min-height: 250px;
+    /*max-height: 450px;*/
+    background-color: var(--color10);
+    left: 75%;
+    top: 40%;
+    padding: 10px;
+    border-radius: 50px;
+    right: 200px;
+    transition: 0.4s ease-in-out;
+    box-shadow: 5px 5px 10px 10px var(--color5);
+}
+
+.zitat-div:hover{
+    transform-origin: 45% 20px;
+    transform: rotateZ(5deg) scale(1.2);
+}
+
+.zitat-title{
+    padding-top: 30px;
+    color: var(--color12);
+    text-align: center;
+    font-size: 30px;
+    font-weight: 900;
+    padding-bottom: 10px;
+}
+
+.zitat-div i{
+    margin-left: 45%;
+    color: var(--color3);
+    font-size: 30px;
+}
+
+.zitat{
+    color: var(--color13);
+    text-align: center;
+    padding: 20px;
+}
+
+
+.services{
+    /*background-color: var(--color3);*/
+    /*background-image: linear-gradient(90deg,#15351c,#43ad40);*/
+    background-image: url(2.svg);
+    background-repeat: no-repeat;
+    background-size: 1000px;
+    background-position: center;
+}
+/*
+.kalender{
+    background-color: var(--color2);    
+    background-image: linear-gradient(90deg,#15351c,#43ad40);
+}
+
+.karriere{
+    background-color: var(--color3);
+    background-image: linear-gradient(90deg,#15351c,#43ad40);
+
+}
+
+.kontakt{
+    background-color: var(--color2);
+    background-image: linear-gradient(90deg,#15351c,#43ad40);
+}
+
+.über-uns{
+    background-color: var(--color3);
+    background-image: linear-gradient(90deg,#15351c,#43ad40);
+}
+*/
+body{
+    background-image: linear-gradient(90deg,#15351c,#43ad40);
+}
+
+
+
+
+
+
+
+
+
+
+.content{
+    display: flex;
+    justify-content: center;
+}
+
+.cards{
+    display: flex;
+    margin: 100px 100px;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.card-d{
+    background-color: #fffffff3;
+    width: 250px;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 15%) ;
+    padding: 30px;
+    margin: 50px;
+    transition: 0.4s ease-in-out;
+    text-align: center;
+} 
+
+.card-d:hover{
+    background-color: var(--color7);
+    color: var(--color10);
+    transform: scale(1.1);
+}
+
+.card{
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+    justify-content: center;
+    color: var(--color5);
+    text-decoration: none;
+    padding-top: 35px;
+    transition: 0.4s ease-in-out;
+    text-align: center;
+}
+
+.card:hover{
+    color: var(--color4);
+    transform: scale(1.1);
+}
+
+.cards .icon{
+    font-size: 100px;
+    color: var(--color3);
+    transition: 0.4s ease-in-out;
+}
+
+.cards .icon:hover{
+    color: var(--color1);
+    transform: scale(1.1);
+}
+
+
+.card-d:hover .icon{
+    color: var(--color10);
+    transform: scale(1.1)
+}
+
+.card-d:hover .card{
+    color: var(--color10);
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+
+
+
+.kalender{
+    background-color: var(--color2);
+    color: var(--color2);
+    padding: 100px;
+}
+
+#seitenkopf{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    transition: 0.4s ease-in-out;
+}
+
+#seitenkopf:hover{
+    color: var(--color7);
+    transform: scale(1.1)
+}
+
+#kalenderblatt{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    transition: 0.4s ease-in-out;
+}
+
+
+#kalenderblatt th{
+    font-size: 20px;
+    font-weight: 900;
+    padding: 15px;
+    transition: 0.4s ease-in-out;  
+    text-align: center;
+}
+
+#kalenderblatt th:hover{
+    color: var(--color7);
+    transform: scale(1.1)
+}
+
+#kalenderblatt td{
+    padding: 10px;
+    transition: 0.4s ease-in-out;
+    text-align: center;
+}
+
+#kalenderblatt td:hover{
+    color: var(--color8);
+    transform: scale(1.1)
+}
+
+.woche{
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--color6);
+}
+
+.alt{
+    opacity: 0.5;
+}
+
+.now{
+    font-size: 27px;
+    color: var(--color9);
+}
+
+.head{
+    color: var(--color5);
+    display: flex;
+    font-size: 30px;
+    font-weight: 800;
+    justify-content: center;
+    transition: 0.4s ease-in-out;
+    padding: 50px;
+}
+
+.head:hover{
+    color: var(--color4);
+    transform: scale(1.1);
+}
+
+section{
+    padding: 100px 100px;   
+    min-height: 100vh ; 
+}
+
+#times{
+    display: block;
+    justify-content: center;
+    margin: 10px;
+    transition: 0.4s ease-in-out;
+}
+
+
+#times h3{
+    display: block;
+    font-size: 20px;
+    font-weight: 900;
+    padding: 15px;
+    transition: 0.4s ease-in-out;  
+    text-align: center;
+}
+/*
+#times h3:hover{
+    color: var(--color4);
+    transform: scale(1.1)
+}
+*/
+#times p{
+    display: block;
+    padding: 10px;
+    transition: 0.4s ease-in-out;
+    text-align: center;
+}
+
+#times p:hover{
+    color: var(--color8);
+    transform: scale(1.1)
+}
+
+
+.time-day{
+    display: block;
+    font-size: 20px;
+    font-weight: 900;
+    padding: 15px;
+    transition: 0.4s ease-in-out;  
+    text-align: center;
+}
+
+#timeDay{
+    display: flex;
+    justify-content: center;
+    transition: 0.4s ease-in-out;
+
+}
+
+#timeDay *{
+    display: block;
+    transition: 0.4s ease-in-out;
+
+}
+button{
+    margin-top: 20px;
+    width: 180px;
+    padding: 3px;
+    background-color: var(--color10);
+    color: var(--color3);
+    font-weight: 900;
+    transition: 0.4s ease-in-out;
+}
+
+button:hover{
+    background-color: var(--color3);
+    color: var(--color10);
+    color: var(--color8);
+    transform: scale(1.1);
+}
+
+/*    
+#termin,#geburtsdatum{
+    width: 172px;
+}*/
+label{
+    color: var(--color2);
+    text-align: center;
+    transition: 0.4s ease-in-out;
+}
+
+label:hover{
+    color: var(--color8);
+    transform: scale(1.1);
+}
+
+input{
+    padding: 3px;
+    width: 180px;
+    transition: 0.4s ease-in-out;
+}
+
+input:hover{
+    color: var(--color8);
+    transform: scale(1.1);
+}

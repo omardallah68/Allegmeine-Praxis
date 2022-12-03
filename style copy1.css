@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Teko:wght@300;400;500;600;700&display=swap');
+
+:root{
+    --color1:#000;
+    --color2:#08270f;
+    --color3:#20410d;
+    --color4:#226113;
+    --color5:#1d7a1d;
+    --color6:#33af4e;
+    --color7:#37c956;
+    --color8:#41db48;
+    --color9:#58ff52;
+    --color10:#ffffff;
+
+    --color11:#e4e4e4;
+    --color12:#072905;
+    --color13:#196d0e;
+    --color14:#15351c;
+    --color15:#43ad40;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    font-family: 'Patrick Hand', 'cursive';
+}
+
+
+
+header{
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    z-index: 100;
+    background-color: var(--color10)
+}
+
+#logo{
+    padding: 20px;
+    margin: 20px;
+    padding-left: 60px;
+    margin-top: 5px;
+    color: var(--color5);
+    transition: 0.4s ease-in-out;
+}
+
+#logo:hover{
+    color: var(--color15);
+    transform: scale(1.1);
+}
+
+.logo{
+    color: var(--color7);
+    font-size: 36px;
+    text-decoration: none;
+    transition: 0.4s ease-in-out;
+}
+
+nav>ul>li, nav>ul>.main-ser>li{
+    display: inline-block;
+    list-style-type: none;
+    margin-top: 5px;
+    padding-right: 60px;
+}
+
+.home1{
+    display: flex;
+}
+
+.main-ser{
+    display: inline-block;
+}
+
+nav>ul>li>a, nav>ul>.main-ser>li>a{
+    font-size: 20px;
+    text-decoration: none;
+    color: var(--color3);  
+    padding: 10px;
+    border-radius: 20px;     
+    transition: 0.4s ease-in-out; 
+}
+
+nav>ul>li>a:hover, nav>ul>.main-ser>li>a:hover{
+    background-color: var(--color15);
+    color: var(--color10);
+}
+
+.servicess{
+    position: relative;
+    
+    /*visibility: hidden;*/
+}
+
+.servicess ul{
+    position: absolute;
+    padding: 10px;
+    top: 110px;
+    left: 60%;
+    z-index: 50;
+    background-color: #33af4e;
+    visibility: hidden;
+}
+
+
+
+.servicess>ul>li{
+    list-style-type: none;
+}
+
+.servicess>ul>li>a{
+
+    text-decoration: none;
+    transition: 0.4s ease-in-out;
+}
+
+
+.main-ser:hover .servicess>ul>li{
+    visibility: visible;
+}
+
+/*.servicess>li>a:hover{
+    color: var(--color2);
+}*/
+
+
+section{
+    background-image: linear-gradient(90deg, var(--color14) ,var(--color15));
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px 200px;
+}
+
+
+.home{
+    position: relative;
+    /*background-color: var(--color2);
+    background-image: linear-gradient(90deg,#15351c,#43ad40);*/
+    letter-spacing: 3px;
+    z-index: auto;
+}
+
+
+.imgs{
+    position: relative;
+    
+    z-index: auto;
+}
+
+.home-img1{
+    width: 500px;
+}
+
+.home-img2{
+    width: 500px;
+}
+
+.title{
+    text-align: center;
+    font-size: 35px;
+    letter-spacing: 3px;
+    color: var(--color10);
+    margin-top: 100px;
+}
+
+.zeichen{
+    position: relative;
+}
+
+.zeichen h3{
+    position: absolute;
+    color: var(--color10);
+    top: 100px;
+    left: 25%;
+    text-align: center;
+    font-size: 25px;
+}
+
+.zeichen>h3>span{
+    transition: 0.4s ease-in-out;
+}
+
+.zeichen>h3>span:hover{
+    font-size: 30px;
+    color :var(--color10);
+    text-shadow: 3px 3px var(--color12);
+}
+
+.willkommen{
+    color: var(--color10);
+    margin-top: 30vh;
+    font-size: 26px;
+    transition: 0.4s ease-in-out;
+}
+
+.willkommen:hover{
+    font-size: 30px;
+}
+
+.willkommen:hover .logo{
+    font-size: 40px;
+    color: var(--color10);
+    text-shadow: 3px 3px var(--color12);
+}
+
+.zitat-div{
+    position: absolute;
+    max-width: 400px;
+    /*max-height: 450px;*/
+    background-color: var(--color10);
+    left: 75%;
+    top: 40%;
+    padding: 10px;
+    border-radius: 50px;
+    right: 200px;
+    transition: 0.4s ease-in-out;
+    box-shadow: 5px 5px 10px 10px var(--color5);
+}
+
+.zitat-div:hover{
+    transform: skew(10deg,20deg) scale(1.2);
+}
+
+.zitat-title{
+    color: var(--color12);
+    text-align: center;
+    font-size: 30px;
+    font-weight: 900;
+    padding-bottom: 10px;
+}
+.zitat{
+    color: var(--color13);
+    text-align: center;
+}
+
+.services{
+    /*background-color: var(--color3);
+    background-image: linear-gradient(90deg,#15351c,#43ad40);*/
+
+}
+
+.kalender{
+    /*background-color: var(--color2);    
+    background-image: linear-gradient(90deg,#15351c,#43ad40);*/
+}
+
+.karriere{
+    /*background-color: var(--color3);
+    background-image: linear-gradient(90deg,#15351c,#43ad40);*/
+
+}
+
+.kontakt{
+    /*background-color: var(--color2);
+    background-image: linear-gradient(90deg,#15351c,#43ad40);*/
+}
+
+.über-uns{
+    /*background-color: var(--color3);
+    background-image: linear-gradient(90deg,#15351c,#43ad40);*/
+}
+
+body{
+    background-image: linear-gradient(90deg,#15351c,#43ad40);
+}
