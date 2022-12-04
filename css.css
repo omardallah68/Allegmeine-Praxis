@@ -1,23 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Teko:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@200;300;400;500;600;700;800&display=swap');
 
 :root{
     --color1:#000;
-    --color2:#08270f;
-    --color3:#20410d;
-    --color4:#226113;
-    --color5:#1d7a1d;
-    --color6:#33af4e;
-    --color7:#37c956;
-    --color8:#41db48;
-    --color9:#58ff52;
+    --color2:#267064;
+    --color3:#267064;
+    --color4:#267064;
+    --color5:#267064;
+    --color6:#ffffff;
+    --color7:#ffffff;
+    --color8:#ffffff;
+    --color9:#ffffff;
     --color10:#ffffff;
 
-    --color11:#e4e4e4;
-    --color12:#072905;
-    --color13:#196d0e;
-    --color14:#15351c;
-    --color15:#43ad40;
+    --color11:#ffffff;
+    --color12:#267064;
+    --color13:#267064;
+    --color14:#267064;
+    --color15:#ffffff;
+
+    --color16:#267064;
+    --color17:#ffffff;
 }
 
 *{
@@ -25,10 +31,14 @@
     margin: 0;
     scroll-behavior: smooth;
     box-sizing: border-box;
-    font-family: 'Kdam Thmor Pro','Patrick Hand', 'cursive';
+    font-family: 'Changa','Poppins','Josefin Sans','Kdam Thmor Pro','Patrick Hand', 'cursive';
+    
 }
 
+/*body{
+    background-image: linear-gradient(360deg, var(--color14) ,var(--color15));
 
+}*/
 
 header{
     display: flex;
@@ -37,21 +47,26 @@ header{
     align-items: center;
     width: 100%;
     z-index: 100;
-    background-color: var(--color10)
+    background-color: var(--color10);
+    max-height: 100px;
 }
+
+
+
 
 #logo{
     padding: 20px;
     margin: 20px;
     padding-left: 60px;
     margin-top: 5px;
-    color: var(--color5);
+    color: var(--color16);
     text-shadow: 1px 1px var(--color1);
     transition: 0.4s ease-in-out;
+    margin-top: 1.5%;
 }
 
 #logo:hover{
-    color: var(--color15);
+    color: var(--color16);
     transform: scale(1.1);
 }
 
@@ -62,12 +77,18 @@ header{
     transition: 0.4s ease-in-out;
 }
 
+
 nav>ul>li, nav>ul>.main-ser>li{
     display: inline-block;
     list-style-type: none;
     margin-top: 5px;
-    padding-right: 60px;
+    padding-right: 20px;
 }
+
+nav{
+    margin-right: 60px;
+}
+
 
 .home1{
     display: flex;
@@ -83,7 +104,8 @@ summary{
 
 summary::after{
     content: ">";
-    font-weight: 600;
+    font-weight: 400;
+    font-size: 20px;
     color: var(--color3);
 }
 
@@ -97,9 +119,31 @@ nav>ul>li>a, nav>ul>.main-ser>li>a, .services-nav{
 }
 
 nav>ul>li>a:hover, nav>ul>.main-ser>li>a:hover, .services-nav:hover{
-    background-color: var(--color15);
-    color: var(--color10);
+    background-color: var(--color16);
+    color: var(--color17);
 }
+
+
+
+
+
+
+
+.kontakt-nav{
+    background-color: var(--color16);
+    color: var(--color17);
+}
+
+.kontakt-nav:hover{
+    background-color: var(--color17);
+    color: var(--color16);
+}
+
+
+
+
+
+
 .services-nav{
     text-decoration: none;
 }
@@ -114,7 +158,7 @@ nav>ul>li>a:hover, nav>ul>.main-ser>li>a:hover, .services-nav:hover{
 .servicess ul{
     position: absolute;
     padding: 10px;
-    top: 40px;
+    top: 29px;
     z-index: 50;
     background-color: #ffffffee;
     /*visibility: hidden;*/
@@ -150,27 +194,25 @@ nav>ul>li>a:hover, nav>ul>.main-ser>li>a:hover, .services-nav:hover{
 }*/
 
 .servicess ul li:hover{
-    background-color: var(--color15);
-    font: var(--color10);
+    background-color: var(--color16);
+    color: var(--color17);
 }
-
-.servicess ul li a:hover{
-    color: var(--color10);
+.servicess ul li:hover .details{
+    color: var(--color17);
 }
-
 
 section{
-    background-image: linear-gradient(90deg, var(--color14) ,var(--color15));
+    /*background-image: linear-gradient(90deg, var(--color14) ,var(--color15));*/
     width: 100%;
     min-height: 100vh;
     padding: 100px 200px;
+
 }
 
 
 .home{
     position: relative;
-    /*background-color: var(--color2);
-    background-image: linear-gradient(90deg,#15351c,#43ad40);*/
+    background-color: var(--color16);
     letter-spacing: 3px;
     z-index: auto;
     
@@ -179,6 +221,7 @@ section{
     background-size: 600px;
     background-position: 0% 100%;
 }
+
 
 .imgs{
     position: relative;
@@ -202,8 +245,13 @@ section{
     text-align: center;
     font-size: 35px;
     letter-spacing: 3px;
-    color: var(--color10);
     margin-top: 100px;
+    transition: 0.4s ease-in-out;
+}
+
+.title:hover{
+    text-shadow: 1px 1px var(--color1);
+    transform: scale(1.1);
 }
 
 .zeichen{
@@ -226,7 +274,7 @@ section{
 .zeichen>h3>span:hover{
     font-size: 30px;
     color :var(--color10);
-    text-shadow: 3px 3px var(--color12);
+    text-shadow: 3px 3px var(--color1);
 }
 
 .willkommen{
@@ -243,7 +291,7 @@ section{
 .willkommen:hover .logo{
     font-size: 40px;
     color: var(--color10);
-    text-shadow: 3px 3px var(--color12);
+    text-shadow: 3px 3px var(--color1);
 }
 
 .zitat-div{
@@ -258,7 +306,8 @@ section{
     border-radius: 50px;
     right: 200px;
     transition: 0.4s ease-in-out;
-    box-shadow: 5px 5px 10px 10px var(--color5);
+    box-shadow: 5px 5px 10px 1px var(--color1);
+    overflow: hidden;
 }
 
 .zitat-div:hover{
@@ -291,36 +340,37 @@ section{
 .services{
     /*background-color: var(--color3);*/
     /*background-image: linear-gradient(90deg,#15351c,#43ad40);*/
+    background-color: var(--color17);
     background-image: url(2.svg);
     background-repeat: no-repeat;
     background-size: 1000px;
     background-position: center;
+    color: var(--color16);   
 }
-/*
+
 .kalender{
-    background-color: var(--color2);    
-    background-image: linear-gradient(90deg,#15351c,#43ad40);
+    background-color: var(--color16);  
+    color: var(--color17);  
 }
 
 .karriere{
-    background-color: var(--color3);
-    background-image: linear-gradient(90deg,#15351c,#43ad40);
-
+    background-color: var(--color17);
+    color: var(--color16);
 }
 
 .kontakt{
-    background-color: var(--color2);
-    background-image: linear-gradient(90deg,#15351c,#43ad40);
+    background-color: var(--color16);
+    color: var(--color17);
 }
 
 .über-uns{
-    background-color: var(--color3);
-    background-image: linear-gradient(90deg,#15351c,#43ad40);
+    background-color: var(--color17);
+    color: var(--color16);
 }
-*/
+/*
 body{
     background-image: linear-gradient(90deg,#15351c,#43ad40);
-}
+}*/
 
 
 
@@ -334,6 +384,7 @@ body{
 .content{
     display: flex;
     justify-content: center;
+
 }
 
 .cards{
@@ -345,7 +396,8 @@ body{
 }
 
 .card-d{
-    background-color: #fffffff3;
+    background-color: var(--color16);
+    color: var(--color17);
     width: 250px;
     height: 300px;
     border-radius: 10px;
@@ -357,8 +409,8 @@ body{
 } 
 
 .card-d:hover{
-    background-color: var(--color7);
-    color: var(--color10);
+    background-color: var(--color17);
+    color: var(--color16);
     transform: scale(1.1);
 }
 
@@ -367,39 +419,72 @@ body{
     font-size: 16px;
     font-weight: 500;
     justify-content: center;
-    color: var(--color5);
+    color: var(--color17);
     text-decoration: none;
-    padding-top: 35px;
+    padding-top: 5px;
     transition: 0.4s ease-in-out;
     text-align: center;
 }
 
 .card:hover{
-    color: var(--color4);
+    color: var(--color16);
     transform: scale(1.1);
 }
 
 .cards .icon{
     font-size: 100px;
-    color: var(--color3);
+    color: var(--color17);
     transition: 0.4s ease-in-out;
+
 }
 
 .cards .icon:hover{
-    color: var(--color1);
+    color: var(--color16);
     transform: scale(1.1);
 }
 
 
 .card-d:hover .icon{
-    color: var(--color10);
+    color: var(--color16);
     transform: scale(1.1)
 }
 
 .card-d:hover .card{
-    color: var(--color10);
+    color: var(--color16);
     transform: scale(1.1);
 }
+
+.kontakt .cards .card-d{
+    background-color: var(--color17);
+}
+
+.kontakt .cards .card-d:hover{
+    background-color: var(--color16);
+}
+
+.kontakt .cards .card{
+    color: var(--color16);
+}
+
+.kontakt .cards .card-d:hover .card{
+    color: var(--color17);
+}
+
+.kontakt .cards .icon{
+    color: var(--color16);
+}
+
+.kontakt .cards .card-d:hover .icon{
+    color: var(--color17);
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -410,8 +495,7 @@ body{
 
 
 .kalender{
-    background-color: var(--color2);
-    color: var(--color2);
+    /*background-color: var(--color2);*/
     padding: 100px;
 }
 
@@ -420,10 +504,11 @@ body{
     justify-content: center;
     margin: 10px;
     transition: 0.4s ease-in-out;
+    color:var(--color17);
 }
 
 #seitenkopf:hover{
-    color: var(--color7);
+    color: var(--color17);
     transform: scale(1.1)
 }
 
@@ -452,6 +537,7 @@ body{
     padding: 10px;
     transition: 0.4s ease-in-out;
     text-align: center;
+    color: var(--color10);
 }
 
 #kalenderblatt td:hover{
@@ -489,10 +575,10 @@ body{
     transform: scale(1.1);
 }
 
-section{
+/*section{
     padding: 100px 100px;   
     min-height: 100vh ; 
-}
+}*/
 
 #times{
     display: block;
@@ -521,10 +607,10 @@ section{
     padding: 10px;
     transition: 0.4s ease-in-out;
     text-align: center;
+    color: var(--color17);
 }
 
 #times p:hover{
-    color: var(--color8);
     transform: scale(1.1)
 }
 
@@ -536,12 +622,14 @@ section{
     padding: 15px;
     transition: 0.4s ease-in-out;  
     text-align: center;
+    color: var(--color17);
 }
 
 #timeDay{
     display: flex;
     justify-content: center;
     transition: 0.4s ease-in-out;
+    color: var(--color17);
 
 }
 
@@ -561,9 +649,8 @@ button{
 }
 
 button:hover{
-    background-color: var(--color3);
-    color: var(--color10);
-    color: var(--color8);
+    background-color: var(--color17);
+    color: var(--color16);
     transform: scale(1.1);
 }
 
@@ -572,7 +659,7 @@ button:hover{
     width: 172px;
 }*/
 label{
-    color: var(--color2);
+    color: var(--color17);
     text-align: center;
     transition: 0.4s ease-in-out;
 }
