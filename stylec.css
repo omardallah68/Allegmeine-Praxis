@@ -1,0 +1,1348 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Teko:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@200;300;400;500;600;700;800&display=swap');
+
+:root{
+    --color1:#000;
+    --color2:#267064;
+    --color3:#267064;
+    --color4:#267064;
+    --color5:#267064;
+    --color6:#ffffff;
+    --color7:#ffffff;
+    --color8:#ffffff;
+    --color9:#ffffff;
+    --color10:#ffffff;
+
+    --color11:#ffffff;
+    --color12:#267064;
+    --color13:#267064;
+    --color14:#267064;
+    --color15:#ffffff;
+
+    --color16:#267064;
+    --color17:#ffffff;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    font-family: 'Changa','Poppins','Josefin Sans','Kdam Thmor Pro','Patrick Hand', 'cursive';
+    
+}
+
+/*body{
+    background-image: linear-gradient(360deg, var(--color14) ,var(--color15));
+
+}*/
+
+header{
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    z-index: 100;
+    background-color: var(--color10);
+    max-height: 100px;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 75%);
+}
+
+
+
+
+#logo{
+    padding: 20px;
+    margin: 20px;
+    padding-left: 60px;
+    margin-top: 5px;
+    color: var(--color16);
+    text-shadow: 1px 1px var(--color1);
+    transition: 0.4s ease-in-out;
+    margin-top: 1.5%;
+}
+
+#logo:hover{
+    color: var(--color16);
+    transform: scale(1.1);
+}
+
+.logo{
+    color: var(--color7);
+    font-size: 36px;
+    text-decoration: none;
+    transition: 0.4s ease-in-out;
+}
+
+
+nav>ul>li, nav>ul>.main-ser>li{
+    display: inline-block;
+    list-style-type: none;
+    margin-top: 5px;
+    padding-right: 20px;
+}
+
+nav{
+    margin-right: 60px;
+}
+
+.small-screen{
+    display: none;
+    margin-right: 150px;
+}
+
+.small-screen summary{
+    list-style-type: none;
+}
+
+.small-screen .small-screen-buttons details summary a{
+    color: var(--color3);
+    text-decoration: none;
+    padding: 5px;
+    transition: 0.4s ease-in-out;
+}
+
+.small-screen .small-screen-buttons details summary::after{
+    content: ">";
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--color3);
+    transition: 0.4s ease-in-out;
+}
+
+.small-screen .small-screen-buttons .servicess ul{
+    background-color: #267064ee;
+}
+
+.small-screen .small-screen-buttons .servicess ul li a{
+    color: var(--color17);
+}
+
+.small-screen .small-screen-buttons .servicess ul li:hover{
+    background-color: var(--color17);
+}
+.small-screen .small-screen-buttons .servicess ul li:hover .details{
+    color: var(--color16);
+}
+
+.small-screen .small-screen-buttons li{
+    list-style-type: none;
+}
+
+.small-screen-buttons{
+    position: relative;
+    /*display: none;*/
+    /*visibility: hidden;*/
+    transition: 0.4s ease-in-out;
+}
+
+.small-screen-buttons ul{
+    
+    position: absolute;
+    padding: 10px;
+    top: 29px;
+    z-index: 50;
+    background-color: #ffffffee;
+    /*visibility: hidden;*/
+    transition: 0.4s ease-in-out;
+    min-width: 190px;
+}
+
+.small-screen-buttons>ul>li{
+    list-style-type: none;
+    padding: 5px;
+    /*border-radius: 20px;*/
+    color: var(--color3);
+}
+
+.small-screen-buttons>ul>li>a{
+    color: var(--color3);
+    text-decoration: none;
+    transition: 0.4s ease-in-out;
+}
+
+.small-screen .small-screen-buttons ul li:hover{
+    background-color: var(--color16);
+    
+}
+
+.small-screen .small-screen-buttons ul li:hover details{
+    color: var(--color17);
+}
+
+.small-screen .small-screen-buttons ul li:hover a, .small-screen .small-screen-buttons ul li:hover details summary::after{
+    color: var(--color17);
+}
+
+.home1{
+    display: flex;
+}
+
+.main-ser{
+    display: inline-block;
+}
+
+.main-ser summary{
+    list-style: none;
+}
+
+.main-ser summary::after{
+    content: ">";
+    font-weight: 400;
+    font-size: 20px;
+    color: var(--color3);
+}
+
+nav>ul>li>a, nav>ul>.main-ser>li>a, .services-nav{
+    font-size: 20px;
+    text-decoration: none;
+    color: var(--color3);  
+    padding: 10px;
+    border-radius: 20px;     
+    transition: 0.4s ease-in-out; 
+}
+
+nav>ul>li>a:hover, nav>ul>.main-ser>li>a:hover, .services-nav:hover{
+    background-color: var(--color16);
+    color: var(--color17);
+    box-shadow: 2.5px 2.5px 5px 0.5px rgba(0, 0, 0, 50%);
+    /*box-shadow: 2.5px 2.5px 5px 0.5px var(--color1);*/
+
+}
+
+
+
+
+
+
+
+.kontakt-nav{
+    background-color: var(--color16);
+    box-shadow: 2.5px 2.5px 5px 0.5px rgba(0, 0, 0, 50%);
+    /*box-shadow: 2.5px 2.5px 5px 0.5px var(--color1);*/
+    color: var(--color17);
+}
+
+.kontakt-nav:hover{
+    background-color: var(--color17);
+    box-shadow: 0px 0px 0px 0px var(--color1);
+    color: var(--color16);
+}
+
+
+
+
+
+
+.services-nav{
+    text-decoration: none;
+}
+
+.servicess{
+    position: relative;
+    /*display: none;*/
+    /*visibility: hidden;*/
+    transition: 0.4s ease-in-out;
+}
+
+.servicess ul{
+    position: absolute;
+    padding: 10px;
+    top: 29px;
+    z-index: 50;
+    background-color: #ffffffee;
+    /*visibility: hidden;*/
+    transition: 0.4s ease-in-out;
+    min-width: 190px;
+}
+
+.servicess>ul>li{
+    list-style-type: none;
+    padding: 5px;
+    /*border-radius: 20px;*/
+    color: var(--color3);
+}
+
+.servicess>ul>li>a{
+    color: var(--color3);
+}
+
+.servicess>ul>li>a{
+
+    text-decoration: none;
+    transition: 0.4s ease-in-out;
+}
+
+
+/*
+.main-ser:hover .servicess>ul>li{
+    visibility: visible;
+}*/
+
+/*.servicess>li>a:hover{
+    color: var(--color2);
+}*/
+
+.servicess ul li:hover{
+    background-color: var(--color16);
+    color: var(--color17);
+}
+.servicess ul li:hover .details{
+    color: var(--color17);
+}
+
+section{
+    /*background-image: linear-gradient(90deg, var(--color14) ,var(--color15));*/
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px 200px;
+
+}
+
+
+.home{
+    position: relative;
+    background-color: var(--color16);
+    letter-spacing: 3px;
+    z-index: auto;
+    
+    /*background-image: url(1.svg);
+    background-repeat: no-repeat;
+    background-size: 600px;
+    background-position: 0% 100%;*/
+}
+
+
+.imgs{
+    position: relative;
+}
+
+.home-img1{
+    position: absolute;
+    width: 500px;
+    left: 5%;
+    margin-top: 8%;
+}
+
+.home-img2{
+    width: 500px;
+    position: absolute;
+    right: 5%;
+    margin-top: 10%;
+}
+
+.title{
+    text-align: center;
+    font-size: 35px;
+    letter-spacing: 3px;
+    margin-top: 100px;
+    transition: 0.4s ease-in-out;
+}
+
+.title:hover{
+    text-shadow: 1px 1px var(--color1);
+    transform: scale(1.1);
+}
+
+/*.zeichen{
+    position: relative;
+}*/
+
+.zeichen h3{
+    /*position: absolute;*/
+    color: var(--color10);
+    margin-top: 100px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.zeichen>h3>span{
+    transition: 0.4s ease-in-out;
+}
+
+.zeichen>h3>span:hover{
+    font-size: 30px;
+    color :var(--color10);
+    text-shadow: 3px 3px var(--color1);
+}
+
+.willkommen{
+    color: var(--color10);
+    text-align: left;
+    margin-top: 25vh;
+    font-size: 26px;
+    transition: 0.4s ease-in-out;
+}
+
+.willkommen:hover{
+    font-size: 30px;
+}
+
+.willkommen:hover .logo{
+    font-size: 40px;
+    color: var(--color10);
+    text-shadow: 3px 3px var(--color1);
+}
+
+.zitat-div{
+    position: absolute;
+    /*max-width: 400px;
+    min-height: 250px;*/
+    /*max-height: 450px;*/
+    background-color: var(--color10);
+    left: 75%;
+    top: 40%;
+    padding: 10px;
+    border-radius: 50px;
+    right: 200px;
+    transition: 0.4s ease-in-out;
+    box-shadow: 5px 5px 10px 1px var(--color1);
+    overflow: hidden;
+}
+
+.zitat-div:hover{
+    transform-origin: 45% 20px;
+    transform: rotateZ(5deg) scale(1.2);
+}
+
+.zitat-title{
+    padding-top: 30px;
+    color: var(--color12);
+    text-align: center;
+    font-size: 30px;
+    font-weight: 900;
+    padding-bottom: 10px;
+}
+
+.zitat-div i{
+    margin-left: 45%;
+    color: var(--color3);
+    font-size: 30px;
+}
+
+.zitat{
+    color: var(--color13);
+    text-align: center;
+    padding: 20px;
+    font-family: 'Kdam Thmor Pro';
+    letter-spacing: 1px;
+}
+
+.zit-div{
+    position: relative;
+}
+
+.zit-div .card-d{
+    position: absolute;
+    background-color: var(--color17);
+    color: var(--color16);
+    font-size: 20px;
+    right: -50px;
+    top: -90px;
+    border-radius: 50px;
+    box-shadow: 5px 5px 10px 1px var(--color1);
+    
+}
+
+.zit-div .card-d i{
+    font-size: 30px;
+}
+
+.zit-div .card-d:hover{
+    
+    background-color: var(--color17);
+    color: var(--color16);
+    transform-origin: 100px 40px;
+    transform: rotateZ(5deg) scale(1.2);
+    /*box-shadow: -2px 2px 2px 2px rgba(0, 0, 0, 15%) ;*/
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 50%);
+}
+
+.zit-div .card-d h1{
+    color: var(--color16);
+    font-size: 20px;
+    transition: 0.4s ease-in-out;
+}
+
+
+.zit-div .card-d .card{
+    color: var(--color16);
+    font-size: 16px;
+    transition: 0.4s ease-in-out;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Kdam Thmor Pro';
+    letter-spacing: 1px;
+}
+
+.zit-div .card-d:hover .card{
+    color: var(--color16);
+    transform: scale(1.1);
+}
+
+
+.zit-div .card-d:hover h1{
+    color: var(--color16);
+    transform: scale(1.1);
+}
+
+
+.services{
+    /*background-color: var(--color3);*/
+    /*background-image: linear-gradient(90deg,#15351c,#43ad40);*/
+    background-color: var(--color17);
+    /*background-image: url(2.svg);
+    background-repeat: no-repeat;
+    background-size: 1000px;
+    background-position: center;*/
+    color: var(--color16);   
+}
+
+.kalender{
+    background-color: var(--color16);  
+    color: var(--color17);  
+}
+
+.karriere{
+    background-color: var(--color17);
+    color: var(--color16);
+}
+
+.kontakt{
+    background-color: var(--color16);
+    color: var(--color17);
+}
+
+.über-uns{
+    background-color: var(--color17);
+    color: var(--color16);
+}
+/*
+body{
+    background-image: linear-gradient(90deg,#15351c,#43ad40);
+}*/
+
+
+
+
+
+
+
+
+
+
+.content{
+    display: flex;
+    justify-content: center;
+
+}
+
+.cards{
+    display: flex;
+    margin: 100px 100px;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.card-d{
+    background-color: var(--color16);
+    color: var(--color17);
+    width: 250px;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 50%);
+    padding: 30px;
+    margin: 50px;
+    transition: 0.4s ease-in-out;
+    text-align: center;
+    overflow: hidden;
+} 
+
+.card-d:hover{
+    background-color: var(--color17);
+    color: var(--color16);
+    transform: scale(1.1);
+}
+
+.card{
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+    justify-content: center;
+    color: var(--color17);
+    text-decoration: none;
+    padding-top: 5px;
+    transition: 0.4s ease-in-out;
+    text-align: center;
+}
+
+.card:hover{
+    color: var(--color16);
+    transform: scale(1.1);
+}
+
+.cards .icon{
+    font-size: 100px;
+    color: var(--color17);
+    transition: 0.4s ease-in-out;
+
+}
+
+.cards .icon:hover{
+    color: var(--color16);
+    transform: scale(1.1);
+}
+
+
+.card-d:hover .icon{
+    color: var(--color16);
+    transform: scale(1.1)
+}
+
+.card-d:hover .card{
+    color: var(--color16);
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+
+
+
+
+.kontakt .cards .card-d{
+    background-color: var(--color17);
+}
+
+.kontakt .cards .card-d:hover{
+    background-color: var(--color16);
+}
+
+.kontakt .cards .card{
+    color: var(--color16);
+}
+
+.kontakt .cards .card-d:hover .card{
+    color: var(--color17);
+}
+
+.kontakt .cards .icon{
+    color: var(--color16);
+}
+
+.kontakt .cards .card-d:hover .icon{
+    color: var(--color17);
+}
+
+
+
+
+
+
+
+
+
+
+
+.content>.cards>.card-d>.inner>.back>p>a{
+    text-decoration: none;
+    color: var(--color16);
+}
+
+
+
+
+
+.kontakt>.content>.cards>.card-d>.inner>.back>p{
+    color: var(--color17);
+}
+.kontakt>.content>.cards>.card-d>.inner>.back>p>a{
+    color: var(--color17);
+}
+
+
+.services>.content>.cards>.card-d>.inner>.back>a{
+    text-decoration: none;
+    color: var(--color16);
+}
+
+
+
+
+
+.inner{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.4s ease-in-out;
+    transform-style: preserve-3d;
+}
+.card-d{
+    position: relative;
+    text-align: center;
+    
+  float: left;
+  perspective: 500px;
+}
+
+.card-d:hover{
+    background-color: var(--color17);
+    transform: rotateY(180deg) scale(1.1);
+    /*box-shadow: -2px 2px 2px 2px rgba(0, 0, 0, 15%) ;*/
+    box-shadow: -2px 2px 2px 2px rgba(0, 0, 0, 50%);
+
+}
+
+
+
+
+
+.card-d:hover .inner{
+    
+    transform: rotateY(180deg);
+    
+  transition: transform 0.4s ease-in-out;
+}
+
+
+.front, .back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+    
+}
+.back{
+    color: var(--color16);
+    transform: rotateY(180deg);
+    transition: 0.4s ease-in-out;
+    align-items: center;
+}
+
+.card-d:hover .back{
+    backface-visibility: visible;
+    transform: rotateY(0deg);
+}
+
+/*
+.card-d{
+    transform: rotateY(0deg);
+}*/
+/*
+.über-uns  .card-d:hover{
+    transform: rotateY(180deg);
+    background-color: var(--color16);
+}
+
+.über-uns  .card-d:hover .back{
+    display: flex;
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.kalender{
+    /*background-color: var(--color2);*/
+    padding: 100px;
+}
+
+#seitenkopf{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    transition: 0.4s ease-in-out;
+    color:var(--color17);
+}
+
+#seitenkopf:hover{
+    color: var(--color17);
+    transform: scale(1.1)
+}
+
+#kalenderblatt{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    transition: 0.4s ease-in-out;
+}
+
+
+#kalenderblatt th{
+    font-size: 20px;
+    font-weight: 900;
+    padding: 15px;
+    transition: 0.4s ease-in-out;  
+    text-align: center;
+}
+
+#kalenderblatt th:hover{
+    color: var(--color7);
+    transform: scale(1.1)
+}
+
+#kalenderblatt td{
+    padding: 10px;
+    transition: 0.4s ease-in-out;
+    text-align: center;
+    color: var(--color10);
+}
+
+#kalenderblatt td:hover{
+    color: var(--color8);
+    transform: scale(1.1)
+}
+
+.woche{
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--color6);
+}
+
+.alt{
+    opacity: 0.5;
+}
+
+.now{
+    font-size: 27px;
+    color: var(--color9);
+}
+
+.head{
+    color: var(--color5);
+    display: flex;
+    font-size: 30px;
+    font-weight: 800;
+    justify-content: center;
+    transition: 0.4s ease-in-out;
+    padding: 50px;
+}
+
+.head:hover{
+    color: var(--color4);
+    transform: scale(1.1);
+}
+
+/*section{
+    padding: 100px 100px;   
+    min-height: 100vh ; 
+}*/
+
+#times{
+    display: block;
+    justify-content: center;
+    margin: 10px;
+    transition: 0.4s ease-in-out;
+}
+
+
+#times h3{
+    display: block;
+    font-size: 20px;
+    font-weight: 900;
+    padding: 15px;
+    transition: 0.4s ease-in-out;  
+    text-align: center;
+}
+/*
+#times h3:hover{
+    color: var(--color4);
+    transform: scale(1.1)
+}
+*/
+#times p{
+    display: block;
+    padding: 10px;
+    transition: 0.4s ease-in-out;
+    text-align: center;
+    color: var(--color17);
+}
+
+#times p:hover{
+    transform: scale(1.1)
+}
+
+
+.time-day{
+    display: block;
+    font-size: 20px;
+    font-weight: 900;
+    padding: 15px;
+    transition: 0.4s ease-in-out;  
+    text-align: center;
+    color: var(--color17);
+}
+
+#timeDay{
+    display: flex;
+    justify-content: center;
+    transition: 0.4s ease-in-out;
+    color: var(--color17);
+
+}
+
+#timeDay *{
+    display: block;
+    transition: 0.4s ease-in-out;
+
+}
+button{
+    margin-top: 20px;
+    width: 180px;
+    padding: 3px;
+    background-color: var(--color10);
+    color: var(--color3);
+    font-weight: 900;
+    transition: 0.4s ease-in-out;
+}
+
+button:hover{
+    background-color: var(--color17);
+    color: var(--color16);
+    transform: scale(1.1);
+}
+
+/*    
+#termin,#geburtsdatum{
+    width: 172px;
+}*/
+label{
+    color: var(--color17);
+    text-align: center;
+    transition: 0.4s ease-in-out;
+}
+
+label:hover{
+    color: var(--color8);
+    transform: scale(1.1);
+}
+
+input{
+    padding: 3px;
+    width: 180px;
+    transition: 0.4s ease-in-out;
+}
+
+input:hover{
+    color: var(--color8);
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:1023px){
+
+
+/*
+    .title{
+        font-size: 1.8em;
+    }
+
+    
+    .content h2{
+        font-size: 1em;
+    }
+
+    .content h3{
+        font-size: 1.6em;
+    }
+    
+    .content{
+        flex-direction: column;
+        align-items: center;
+    }*/
+
+
+
+
+
+    header{
+        padding: 12px 20px;
+        width: 100%;
+    }
+
+    #logo{
+        font-size: 30px;
+        padding-left: 20px;
+    }
+
+    nav{
+        margin-right: 20px;
+    }
+
+    nav ul li a, .services-nav, summary::after{
+        font-size: 16px;
+    }
+
+    section{
+        padding: 80px 20px;
+        width: 100%;
+    }
+
+    .zeichen h3{
+        margin-top: 50px;
+        font-size: 18px;
+    }
+
+    .willkommen{
+        margin-top: 20vh;
+        margin-left: 8vw;
+        font-size: 18px;
+    }
+
+    #name{
+        font-size: 24px;
+    }
+
+    .zit-div .card-d{
+        width: 200px;
+        height: 250px;
+        top: -150px;
+        right: -10px;
+    }
+
+    .zit-div .card-d .icon{
+        font-size: 16px;
+    }
+
+
+    .zit-div .card-d .card{
+        font-size: 12px;
+    }
+
+    #kalenderblatt th{
+        padding: 5px;
+    }
+    /*
+    .title{
+        font-size: 1.8em;
+    }
+
+    
+    
+    .main-content h2{
+        font-size: 1em;
+    }
+
+    .main-content h3{
+        font-size: 1.6em;
+    }
+    
+    .content{
+        flex-direction: column;
+        align-items: center;
+    }
+    */
+}
+
+@media (max-width:642px){
+    /*body{
+        font-size: 12px;
+    }*/
+/*
+
+    body{
+        font-size: 12px;
+    }
+    
+    .content h2{
+        font-size: 0.8em;
+    }
+
+    .content h3{
+        font-size: 1.4em;
+    }
+
+*/
+
+
+    header{
+        padding: 6px 10px;
+        width: 100%;
+        max-height: 50px;
+    }
+
+    #logo{
+        font-size: 14px;
+        padding-left: 5px;
+        margin-top: 15px;
+    }
+
+    nav{
+        margin-right: 5px;
+    }
+
+    nav ul li a, .services-nav, summary::after{
+        font-size: 10px;
+        margin-bottom: 8px;
+    }
+
+    nav ul li a, .services-nav{
+        padding: 5px;
+    }
+
+    section{
+        padding: 60px 15px;
+        width: 100%;
+    }
+
+    .zeichen h3{
+        margin-top: 30px;
+        font-size: 14px;
+    }
+
+    .zeichen h3 span:hover{
+        font-size: 18px;
+    }
+
+    .willkommen{
+        margin-top: 20vh;
+        margin-left: 8vw;
+        font-size: 14px;
+    }
+    
+    .willkommen:hover{
+        font-size: 18px;
+    }
+
+    .willkommen:hover .logo{
+        font-size: 20px;
+    }
+
+    #name{
+        font-size: 20px;
+    }
+
+    .zit-div .card-d{
+        width: 150px;
+        height: 200px;
+        top: -20px;
+        right: -10px;
+        padding: 15px;
+    }
+
+    .zit-div .card-d i{
+        font-size: 18px;
+    }
+
+    .zit-div .card-d .icon{
+        font-size: 12px;
+    }
+
+
+    .zit-div .card-d .card{
+        font-size: 8px;
+    }
+
+    
+
+    .title{
+        font-size: 20px;
+    }
+
+    .card-d{
+        width: 150px;
+        height: 200px;
+    }
+
+    .card-d .icon{
+        font-size: 50px;
+    }
+
+    .card-d .card{
+        font-size: 12px;
+    }
+
+    #seitenkopf h1{
+        font-size: 16px;
+    }
+
+    #kalenderblatt th{
+        padding: 5px;
+        font-size: 14px;
+    }
+    
+    #kalenderblatt td{
+        font-size: 12px;
+    }
+
+    .back{
+        font-size: 12px;
+    }
+
+    nav{
+        display: none;
+    }
+
+    
+    .small-screen summary{
+        text-align: right;
+    }
+
+    .small-screen{
+        display: block;
+    }
+    /*
+    
+    nav ul li, .main-ser{
+        display: none;
+    }
+
+    details{
+        color: var(--color16);
+        display: flex;
+        transition: 0.7s ease;
+    }
+
+    details:hover[open]{
+        transform: scale(1.1);
+    }
+
+    details [close]{
+        visibility: hidden;
+        transform: scale(-1.1);
+    }
+
+    summary{
+        list-style: none;
+        color: var(--color17);
+    }
+
+    details a{
+        text-decoration: none;
+        font-size: 1.1em;
+        font-weight: 500;
+        padding-left: 30px;
+        margin: 0;
+    }
+
+    details a:visited{
+        color: var(--color17);
+    }
+
+    details a:hover .small-screen-buttons-content a{
+        color: var(--color17);
+        transform: scale(1.1);
+    }
+
+    details a:hover{
+        color: var(--color16);
+    }
+
+    .small-screen-buttons{
+        background-color: var(--color17);
+        color: var(--color16);
+        right: 2px;
+        position: relative;
+        display: inline-block;
+    }
+
+    .small-screen-buttons-content{
+        display: block;
+        position: absolute;
+        padding-right: 30px;
+        background-color: var(--color17);
+        min-width: 160px;
+        box-shadow: 0 16px 16px 0 rgba(1 1 1 / 15%);
+        z-index: 1;
+        float: right;
+        overflow: hidden;
+        right: 0px;
+        top: 30px;
+        
+    }
+
+    .small-screen-buttons:hover, .small-screen-buttons:focus {
+        background-color: var(--color17);
+    }
+
+    .small-screen-buttons a{
+        text-decoration: none;
+        /*font-size: 1.1em;
+        font-weight: 500;
+        padding: 12px 16px;
+    }
+
+    .show{
+        display: block;
+    }
+
+    .small-screen-buttons a:hover{
+        color: var(--color16);
+    }
+
+    .main-content h2{
+        font-size: 0.8em;
+    }
+
+    .main-content h3{
+        font-size: 1.4em;
+    }
+
+
+
+    .zitat-div{
+        display: block;
+        padding: 20px;
+        font-size: 2px;
+        max-width: 100vw;
+        min-width: 80vw;
+        max-height: 100vh;
+        min-height: 80vh;
+    }
+    */
+@media (max-width:300px){
+    body{
+        font-size: 10px;
+    }
+    .small-screen-buttons-content{
+        top: 30px;
+    }
+}
+}

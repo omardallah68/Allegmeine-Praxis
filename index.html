@@ -3,9 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-    <link rel="stylesheet" href="css.css">
+    <link class="page-icon" rel="icon" herf="icons\house-medical-solid.svg">
+    <link rel="stylesheet" href="stylec.css">
+    <!--<link rel="stylesheet" href="stylecss.css">-->
+    <!--<link rel="stylesheet" href="css.css">-->
     <!--<link rel="stylesheet" href="style412.css">-->
     <!--<link rel="stylesheet" href="style copy.css">-->
     <!--<link rel="stylesheet" href="style1.css">-->
@@ -15,24 +21,47 @@
     <header>
         <a href="#" class="logo" id="logo">Allgemeine Praxis</a>
         <nav>
-            <ul>
-                <li><a href="#" class="home1">Home</a></li>
-                <div class="main-ser"><li><details><summary><a href="#services" class="services-nav">Services</a></summary>
-                    <div class="servicess"><ul>
-                    <li><a href="#" class="details"><p>Termin buchen</p></a></li>
-                    <li><a href="#" class="details">Rezept bestellen</a></li>
-                    <li><a href="#" class="details">Überweisung bestellen</a></li>
-                    <li><a href="#" class="details">Laborwerte anzeigen</a></li>
-                    <li><a href="#" class="details">Videosprechstunde buchen</a></li>
-                    <li><a href="#" class="details">häfige Fragen anzeigen</a></li>
-                    <li><a href="#" class="details">Nachricht schicken</a></li>
-                </ul></div></details></li></div>
-                <li><a href="#kalender">Kalender</a></li>
-                <li><a href="#karriere">Karriere</a></li>
-                <li><a href="#kontakt" class="kontakt-nav">Kontakt</a></li>
-                <li><a href="#über-uns">Über uns</a></li>
-            </ul>
+                <ul>
+                    <li><a href="#" class="home1">Home</a></li>
+                    <div class="main-ser"><li><details><summary><a href="#services" class="services-nav">Services</a></summary>
+                        <div class="servicess"><ul>
+                        <li><a href="" class="details">Termin buchen</a></li>
+                        <li><a href="" class="details">Rezept bestellen</a></li>
+                        <li><a href="" class="details">Überweisung bestellen</a></li>
+                        <li><a href="" class="details">Laborwerte anzeigen</a></li>
+                        <li><a href="" class="details">Videosprechstunde buchen</a></li>
+                        <li><a href="" class="details">häfige Fragen anzeigen</a></li>
+                        <li><a href="" class="details">Nachricht schicken</a></li>
+                    </ul></div></details></li></div>
+                    <li><a href="#kalender">Kalender</a></li>
+                    <li><a href="#karriere">Karriere</a></li>
+                    <li><a href="#kontakt" class="kontakt-nav">Kontakt</a></li>
+                    <li><a href="#über-uns">Über uns</a></li>
+                </ul>
         </nav>
+
+
+        <details class="small-screen">
+            <summary><i class="fa-solid fa-bars"></i></summary>
+                <div class="small-screen-buttons"><ul>
+                    <li><a href="#" class="home1">Home</a></li>
+                    <div><li><details><summary><a href="#services">Services</a></summary>
+                        <div class="servicess"><ul>
+                        <li><a href="" class="details">Termin buchen</a></li>
+                        <li><a href="" class="details">Rezept bestellen</a></li>
+                        <li><a href="" class="details">Überweisung bestellen</a></li>
+                        <li><a href="" class="details">Laborwerte anzeigen</a></li>
+                        <li><a href="" class="details">Videosprechstunde buchen</a></li>
+                        <li><a href="" class="details">häfige Fragen anzeigen</a></li>
+                        <li><a href="" class="details">Nachricht schicken</a></li>
+                    </ul></div></details></li></div>
+                    <li><a href="#kalender">Kalender</a></li>
+                    <li><a href="#karriere">Karriere</a></li>
+                    <li><a href="#kontakt">Kontakt</a></li>
+                    <li><a href="#über-uns">Über uns</a></li>
+                </ul>
+            </div>
+        </details>
     </header>
 
     <!--
@@ -52,12 +81,14 @@
 
     <section class="home" id="section">
         <div class="zeichen"><h3><span>Beste Spezialisten</span>, <span>Beste Behandlung</span>, <span>Beste Ausstattung</span></h3></div>
-        <h2 class="willkommen">Guten Tag, <br><span>Herzlichen Willkommen bei der <a href="#" class="logo">Allgemeine Praxis</a></span></h2>
-        <div class="zitat-div">
-            <!--<i class="fa-solid fa-thumbtack"></i>-->
-            <i class="fa-solid fa-map-pin"></i>
-            <h1 class="zitat-title">Zitat des Tages</h1>
-            <h3 class="zitat">"Die Vorbeugung ist besser als die Behandlung"</h3>
+        <h2 class="willkommen">Guten Tag, <br><span>Herzlichen Willkommen bei der <a href="#" id="name" class="logo">Allgemeine Praxis</a></span></h2>
+        <div class="zit-div">
+            <div class="card-d">
+                <!--<i class="fa-solid fa-thumbtack"></i>-->
+                <i class="fa-solid fa-map-pin"></i>
+                <h1 class="icon">Zitat des Tages</h1>
+                <h3 class="card">"Die Vorbeugung ist besser als die Behandlung"</h3>
+            </div>
         </div>
         <!--<div class="imgs">
             <img  class="home-img1" src="1.svg" alt="Doctor-Photo1">
@@ -73,36 +104,85 @@
         <h1 class="title">Services</h1>
         <div class="content">
 
-        <div class="cards">
-            <div class="card-d">
-                <div class="icon"><i class="fa-regular fa-calendar-check"></i></div>
-                <a href="termin" class="card">Termin vereinbaren</a>
+            <div class="cards">
+                
+                <div class="card-d">
+                    <div class="inner">
+                        <div class="front">
+                            <div class="icon"><i class="fa-regular fa-calendar-check"></i></div>
+                            <a href="termin" class="card">Termin vereinbaren</a>
+                        </div>
+                        <div class="back">
+                            <a href="">Klicken Sie bitte hier</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-d">
+                    <div class="inner">
+                        <div class="front">
+                            <div class="icon"><i class="fa-solid fa-pills"></i></div>
+                            <a href="rezept" class="card">Rezept Bestellen</a>
+                        </div>
+                        <div class="back">
+                            <a href="">Klicken Sie bitte hier</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-d">
+                    <div class="inner">
+                        <div class="front">
+                            <div class="icon"><i class="fa-regular fa-hand-point-right"></i></div>
+                            <a href="ueberweisung" class="card">Überweisung Bestellen</a>
+                        </div>
+                        <div class="back">
+                            <a href="">Klicken Sie bitte hier</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-d">
+                    <div class="inner">
+                        <div class="front">
+                            <div class="icon"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
+                            <a href="laborwerte" class="card">Laborwerte anzeigen</a>
+                        </div>
+                        <div class="back">
+                            <a href="">Klicken Sie bitte hier</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-d">
+                    <div class="inner">
+                        <div class="front">
+                            <div class="icon"><i class="fa-solid fa-video"></i></div>
+                            <a href="videosprechstunde" class="card">Videosprechstunde buchen</a>
+                        </div>
+                        <div class="back">
+                            <a href="">Klicken Sie bitte hier</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-d">
+                    <div class="inner">
+                        <div class="front">
+                            <div class="icon"><i class="fa-solid fa-question"></i></div>
+                            <a href="haefige-fragen" class="card">häfige Fragen anzeigen</a>
+                        </div>
+                        <div class="back">
+                            <a href="">Klicken Sie bitte hier</a>
+                        </div>
+                </div>
+                </div>
+                <div class="card-d">
+                    <div class="inner">
+                        <div class="front">
+                            <div class="icon"><i class="fa-solid fa-message"></i></div>
+                            <a href="nachricht" class="card">Nachricht schicken</a></div>
+                        <div class="back">
+                                <a href="">Klicken Sie bitte hier</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="card-d">
-                <div class="icon"><i class="fa-solid fa-pills"></i></div>
-                <a href="rezept" class="card">Rezept Bestellen</a>
-            </div>
-            <div class="card-d">
-                <div class="icon"><i class="fa-regular fa-hand-point-right"></i></div>
-                <a href="ueberweisung" class="card">Überweisung Bestellen</a>
-            </div>
-            <div class="card-d">
-                <div class="icon"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
-                <a href="rezept" class="card">Laborwerte anzeigen</a>
-            </div>
-            <div class="card-d">
-                <div class="icon"><i class="fa-solid fa-video"></i></div>
-                <a href="ueberweisung" class="card">Videosprechstunde buchen</a>
-            </div>
-            <div class="card-d">
-                <div class="icon"><i class="fa-solid fa-question"></i></div>
-                <a href="termin" class="card">häfige Fragen anzeigen</a>
-            </div>
-            <div class="card-d">
-                <div class="icon"><i class="fa-solid fa-message"></i></div>
-                <a href="rezept" class="card">Nachricht schicken</a>
-            </div>
-        </div>
 
         </div>
 
@@ -204,22 +284,52 @@
         <div class="content">
 
             <div class="cards">
+
+
                 <div class="card-d">
-                    <div class="icon"><i class="fa-solid fa-stethoscope"></i></div>
-                    <a href="termin" class="card">Arzt / Ärztin</a>
+                    <div class="inner">
+                        <div class="front">
+                            <div class="icon"><i class="fa-solid fa-stethoscope"></i></div>
+                            <a href="#" class="card">Arzt / Ärztin</a>
+                        </div>
+                        <div class="back">
+                            <p>Schicken Sie Ihre Bewerbung an: <br><a href="#">arzt-bewerbung@allgemeine-praxis.de</a></p>
+                        </div>
+                    </div>
                 </div>
+
+
+
                 <div class="card-d">
-                    <div class="icon"><i class="fa-regular fa-user"></i></div>
-                    <a href="rezept" class="card">Arzthelfer / Arzthelferin</a>
+                    <div class="inner">
+                        <div class="front">
+                            <div class="icon"><i class="fa-regular fa-user"></i></div>
+                            <a href="#" class="card">Arzthelfer / Arzthelferin</a>
+                        </div>
+                        <div class="back">
+                            <p>Schicken Sie Ihre Bewerbung an: <br><a href="#">arzthelfer-bewerbung@allgemeine-praxis.de</a></p>
+                        </div>
+                    </div>
                 </div>
-                <div class="card-d">
-                    <div class="icon"><i class="fa-solid fa-user"></i></div>
-                    <a href="ueberweisung" class="card">Auszubildender / Auszubildenderin</a>
+
+
+
+                <div class="card-d">    
+                    <div class="inner">
+                        <div class="front">
+                            <div class="icon"><i class="fa-solid fa-user"></i></div>
+                            <a href="#" class="card">Auszubildender / Auszubildenderin</a>
+                        </div>
+                        <div class="back">
+                            <p>Schicken Sie Ihre Bewerbung an: <br><a href="#">azubi-bewerbung@allgemeine-praxis.de</a></p>
+                        </div>
+                    </div>
                 </div>
+                
 
             </div>
     
-            </div>
+        </div>
     
 
 
@@ -236,16 +346,37 @@
 
             <div class="cards">
                 <div class="card-d">
-                    <div class="icon"><i class="fa-solid fa-phone"></i></div>
-                    <a href="termin" class="card">Unsere Telefonnummer</a>
+                <div class="inner">
+                    <div class="front">
+                        <div class="icon"><i class="fa-solid fa-phone"></i></div>
+                        <a href="" class="card">Unsere Telefonnummer</a>
+                    </div>
+                    <div class="back">
+                        <p>Unsere Telefonnummer ist: <br><a href="">0731 55 11 223</a></p>
+                    </div>
+                </div>
                 </div>
                 <div class="card-d">
-                    <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
-                    <a href="rezept" class="card">Unsere Addresse</a>
+                <div class="inner">
+                    <div class="front">
+                        <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
+                        <a href="" class="card">Unsere Addresse</a>
+                    </div>
+                    <div class="back">
+                        <p>Unsere Addresse ist: <br><a href="">Berlinerstrasse 8 <br> 89073 Ulm</a></p>
+                    </div>
+                </div>
                 </div>
                 <div class="card-d">
-                    <div class="icon"><i class="fa-solid fa-envelope"></i></div>
-                    <a href="ueberweisung" class="card">Unser E-Mailaddresse</a>
+                    <div class="inner">
+                    <div class="front">
+                        <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+                        <a href="" class="card">Unser E-Mailaddresse</a>
+                    </div>
+                    <div class="back">
+                        <p>Unsere E-Mailadresse ist: <br><a href="">info@allgemeine-praxis.de</a></p>
+                    </div>
+                </div>
                 </div>
             </div>
     
@@ -267,36 +398,116 @@
 
             <div class="cards">
                 <div class="card-d">
-                    <div class="icon"><i class="fa-solid fa-person"></i></div>
-                    <a href="termin" class="card">Khaled</a>
+                <div class="inner">
+                    <div class="front">
+                        <div class="icon"><i class="fa-solid fa-person"></i></div>
+                        <a href="" class="card">Khaled</a>
+                    </div>
+                    <div class="back">
+                        <h1>Khaled</h1>
+                        <h2>Arzt</h2>
+                        <h3>25 Jahres alt</h3>
+                        <p>Leiter der Praxis</p>
+                    </div>
+                </div>
                 </div>
                 <div class="card-d">
-                    <div class="icon"><i class="fa-solid fa-person-dress"></i></div>
-                    <a href="rezept" class="card">Paula</a>
+                <div class="inner">
+                    <div class="front">
+                        <div class="icon"><i class="fa-solid fa-person-dress"></i></div>
+                        <a href="" class="card">Paula</a>
+                    </div>
+                    <div class="back">
+                        <h1>Paula</h1>
+                        <h2>Ärztin</h2>
+                        <h3>28 Jahres alt</h3>
+                        <p>Vertreterin der Leiter der Praxis</p>
+                    </div>
+                </div>
                 </div>
                 <div class="card-d">
-                    <div class="icon"><i class="fa-solid fa-person"></i></div>
-                    <a href="ueberweisung" class="card">Manar</a>
+                <div class="inner">
+                    <div class="front">
+                        <div class="icon"><i class="fa-solid fa-person"></i></div>
+                        <a href="" class="card">Manar</a>
+                    </div>
+                    <div class="back">
+                        <h1>Manar</h1>
+                        <h2>Arzt</h2>
+                        <h3>30 Jahres alt</h3>
+                        <p>Facharzt für Diabetes</p>
+                    </div>
+                </div>
                 </div>
                 <div class="card-d">
-                    <div class="icon"><i class="fa-solid fa-person-dress"></i></div>
-                    <a href="termin" class="card">Laura</a>
+                <div class="inner">
+                    <div class="front">
+                        <div class="icon"><i class="fa-solid fa-person-dress"></i></div>
+                        <a href="" class="card">Laura</a>
+                    </div>
+                    <div class="back">
+                        <h1>Laura</h1>
+                        <h2>Ärztin</h2>
+                        <h3>33 Jahres alt</h3>
+                        <p>Fachärztin für Kinder</p>
+                    </div>
+                </div>
                 </div>
                 <div class="card-d">
-                    <div class="icon"><i class="fa-solid fa-person"></i></div>
-                    <a href="rezept" class="card">Basel</a>
+                <div class="inner">
+                    <div class="front">
+                        <div class="icon"><i class="fa-solid fa-person"></i></div>
+                        <a href="" class="card">Basel</a>
+                    </div>
+                    <div class="back">
+                        <h1>Basel</h1>
+                        <h2>Arzt</h2>
+                        <h3>27 Jahres alt</h3>
+                        <p>Facharzt für Orthopädie</p>
+                    </div>
+                </div>
                 </div>
                 <div class="card-d">
-                    <div class="icon"><i class="fa-solid fa-person-dress"></i></div>
-                    <a href="ueberweisung" class="card">Mona</a>
+                <div class="inner">
+                    <div class="front">
+                        <div class="icon"><i class="fa-solid fa-person-dress"></i></div>
+                        <a href="" class="card">Mona</a>
+                    </div>
+                    <div class="back">
+                        <h1>Mona</h1>
+                        <h2>Ärztin</h2>
+                        <h3>30 Jahres alt</h3>
+                        <p>Augenärztin</p>
+                    </div>
+                </div>
                 </div>
                 <div class="card-d">
-                    <div class="icon"><i class="fa-solid fa-person"></i></div>
-                    <a href="termin" class="card">Hasan</a>
+                <div class="inner">
+                    <div class="front">
+                        <div class="icon"><i class="fa-solid fa-person"></i></div>
+                        <a href="" class="card">Hasan</a>
+                    </div>
+                    <div class="back">
+                        <h1>Hasan</h1>
+                        <h2>Arzt</h2>
+                        <h3>35 Jahres alt</h3>
+                        <p>Facharzt für Neurologie</p>
+                    </div>
+                </div>
                 </div>
                 <div class="card-d">
-                    <div class="icon"><i class="fa-solid fa-person-dress"></i></div>
-                    <a href="rezept" class="card">Rana</a>
+                <div class="inner">
+                    <div class="front">
+                        <div class="icon"><i class="fa-solid fa-person-dress"></i></div>
+                        <a href="" class="card">Rana</a>
+                    </div>
+                    <div class="back">
+                        <h1>Rana</h1>
+                        <h2>Ärztin</h2>
+                        <h3>33 Jahres alt</h3>
+                        <p>Fachärztin für Psychiatrie</p>
+                    </div>
+                </div>
                 </div>
             </div>
     
