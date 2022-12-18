@@ -1001,11 +1001,13 @@ body{
 
 .alt{
     opacity: 0.5;
+
 }
 
 .now{
     font-size: 27px;
     color: var(--color9);
+    text-shadow: 1px 1px var(--color1);
 }
 
 .head{
