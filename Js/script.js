@@ -11,7 +11,7 @@ let time = function(){
     <p id="time-day" class="time1-day" onclick="timeDay1()">9:00</p>
     <p id="time-day" class="time1-day" onclick="timeDay1()">10:00</p>
     <p id="time-day" class="time1-day" onclick="timeDay1()">11:00</p>
-    
+    </div>
     <div class="nachmittag">
     <p id="time-day" class="time1-day" onclick="timeDay1()">13:00</p>
     <p id="time-day" class="time1-day" onclick="timeDay1()">14:00</p>
