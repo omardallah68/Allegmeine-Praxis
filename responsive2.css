@@ -1,0 +1,304 @@
+/*@media (min-width:1536px){
+    .zit-div .card-d{
+        padding: 40px;
+    }
+}
+
+@media (max-width:1536px){
+
+    .zit-div{
+        left: 100px;
+    }
+
+    section{
+        padding: 10vh 8vw ;
+    }
+
+    #kalenderblatt th{
+        font-size: 26px;
+    }
+    #kalenderblatt td{
+        font-size: 15px;
+    }
+    .woche{
+        font-size: 15px;
+    }
+    .now{
+        font-size: 18px;
+    }
+}*/
+
+@media (max-width:1280px){
+
+    #logo{
+        padding-left: 20px;
+    }
+
+    nav{
+        margin-right: 20px;
+    }
+
+    nav>ul>li, nav>ul>.main-ser>li{
+        margin-top: 5px;
+        padding-right: 5px;
+    }
+
+    nav>ul>li>a, nav>ul>.main-ser>li>a, .services-nav, .main-ser summary::after{
+        font-size: 1.5vw;
+    }
+
+    section{
+        padding: 8vh 6vw;
+    }
+
+    .zeichen h3 span, .zeichen h3, .willkommen{
+        font-size: 18px;
+    } 
+
+    .zeichen h3 span:hover, .willkommen:hover{
+        font-size: 22px;
+    }
+
+    .logo{
+        font-size: 26px;
+    }
+
+    .willkommen:hover .logo{
+        font-size: 30px;
+    }
+
+    .title{
+        font-size: 26px;
+    }
+
+    .title:hover{
+        font-size: 30px;
+    }
+
+    .zit-div{
+        bottom: 5vh;
+    }
+
+    /*.zit-div .card-d{
+        padding: 10px;
+    }*/
+    
+
+    .card-d{
+        width: 20vw;
+    }
+
+    .card{
+        font-size: 1.2vw;
+    }
+
+    .cards .icon{
+        font-size: 7.5vw;
+    }
+}
+
+@media (max-width:1024px){
+
+
+    /* nav>ul>li>a, nav>ul>.main-ser>li>a, .services-nav, .main-ser summary::after{
+        font-size: 1.3vw;
+    } */
+
+    .willkommen{
+        top: 15vh;
+    }
+    
+    .zit-div .card-d{
+        min-width: 200px;
+        right: 40px;
+    }
+
+    .zit-div .card-d i{
+        font-size: 18px;
+    }
+
+    .zit-div .card-d h1{
+        font-size: 15px;
+    }
+
+    .zit-div .card-d .card{
+        font-size: 10px;
+    }
+
+    #kalenderblatt th{
+        font-size: 20px;
+        padding: 5px;
+    }
+
+    #kalenderblatt td{
+        font-size: 14px;
+    }
+
+    .woche{
+        font-size: 20px;
+    }
+
+    .now{
+        font-size: 18px;
+    }
+
+}
+
+
+@media (max-width:768px){
+    *{
+        font-size: 1.8vw;
+    }
+    .zeichen h3 span, .zeichen h3, .willkommen{
+        font-size: 12px;
+    } 
+
+    .zeichen h3 span:hover, .willkommen:hover{
+        font-size: 16px;
+    }
+
+    .logo{
+        font-size: 18px;
+    }
+
+    .willkommen:hover .logo{
+        font-size: 20px;
+    }
+
+    .zit-div .card-d{
+        right: 60px;
+        padding: 20px;
+        min-width: 150px;
+    }
+
+    .title{
+        font-size: 18px;
+    }
+
+    .title:hover{
+        font-size: 20px;
+    }
+
+    .card{
+        font-size: 12px;
+    }
+    .icon i{
+        font-size: 80px;
+    }
+
+    footer p{
+        margin-left: 25px;
+    }
+
+    footer ul{
+        margin-right: 25px;
+    }
+}
+
+@media (max-width:640px){
+    *{
+        font-size: 16px;
+    }
+
+    .willkommen{
+        margin-top: 12vh;
+    }
+
+    .zeichen h3{
+        margin-top: 50px;
+    }
+
+    .zeichen h3 span, .zeichen h3, .willkommen{
+        font-size: 14px;
+    } 
+
+    .zeichen h3 span:hover, .willkommen:hover{
+        font-size: 16px;
+    }
+
+    .logo{
+        font-size: 18px;
+    }
+
+    .willkommen:hover .logo{
+        font-size: 20px;
+    }
+
+    .zit-div .card-d{
+        top: 400px;
+        right: 60px;
+        padding: 20px;
+        min-width: 200px;
+        min-height: 20px;
+        max-height: 200px;
+    }
+
+    .main-dbtn{
+        top: 30vw;
+    }
+
+    .main-btn{
+        font-size: 14px;
+        min-width: 50vw;
+    }
+
+
+    nav{
+        display: none;
+    }
+
+    .small-screen{
+        display: flex;
+        margin-right: 30px;
+    }
+
+    .small-screen summary i{
+        font-size: 20px;
+    }
+
+    .small-screen {
+        display: block;
+        margin-right: 20px;
+    }
+
+    .small-screen-buttons {
+        right: 140px;
+        top: -20px;
+    }
+
+    header{
+        max-height: 80px;
+    }
+
+    .zit-div .card-d i, , {
+        font-size: 50px;
+    }
+    
+    .zit-div .card-d h3{
+        font-size: 10px;
+    }
+
+    .zit-div .card-d .card{
+        font-size: 10px;
+    }
+
+
+    footer ul{
+        margin-right: 10px;
+    }
+
+    footer p{
+        font-size: 12px;
+        margin-left: 10px;
+    }
+    
+    footer ul li a{
+        font-size: 12px;
+        padding: 5px;
+    }
+
+    footer ul li{
+        padding: 1px;
+    }
+
+}
