@@ -1,0 +1,62 @@
+@media (max-width:1536px){
+
+    .zit-div{
+        left: 100px;
+    }
+
+    section{
+        padding: 10vh 8vw ;
+    }
+
+}
+
+@media (max-width:1280px){
+
+    #logo{
+        padding-left: 20px;
+    }
+
+    nav{
+        margin-right: 20px;
+    }
+
+    nav>ul>li, nav>ul>.main-ser>li{
+        margin-top: 5px;
+        padding-right: 5px;
+    }
+
+    section{
+        padding: 8vh 6vw;
+    }
+
+    .zeichen h3, .willkommen{
+        font-size: 20px;
+    } 
+
+    .zeichen h3:hover, .willkommen:hover{
+        font-size: 22px;
+    }
+
+    .logo{
+        font-size: 26px;
+    }
+
+    .willkommen:hover .logo{
+        font-size: 30px;
+    }
+
+    .zit-div{
+        
+        bottom: 5vh;
+    }
+}
+
+@media (max-width:1024px){
+}
+
+
+@media (max-width:768px){
+}
+
+@media (max-width:640px){
+}

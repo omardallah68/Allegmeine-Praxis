@@ -8,8 +8,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="HandheldFriendly" content="true">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-    <link class="page-icon" rel="icon" herf="icons\house-medical-solid.svg">
+    <link class="page-icon" rel="icon" herf="fa-solid fa-house-medical">
     <link rel="stylesheet" href="stylec.css">
+    <link rel="stylesheet" href="responsive1.css">
+    <!--<link rel="stylesheet" href="responsive.css">-->
     <!--<link rel="stylesheet" href="stylecss.css">-->
     <!--<link rel="stylesheet" href="css.css">-->
     <!--<link rel="stylesheet" href="style412.css">-->
@@ -81,7 +83,10 @@
 
     <section class="home" id="section">
         <div class="zeichen"><h3><span>Beste Spezialisten</span>, <span>Beste Behandlung</span>, <span>Beste Ausstattung</span></h3></div>
-        <h2 class="willkommen">Guten Tag, <br><span>Herzlichen Willkommen bei der <a href="#" id="name" class="logo">Allgemeine Praxis</a></span></h2>
+        <div class="main-div">
+            <h2 class="willkommen">Guten Tag, <br><span>Herzlichen Willkommen bei der <a href="#" id="name" class="logo">Allgemeine Praxis</a></span></h2>
+            
+        </div>
         <div class="zit-div">
             <div class="card-d">
                 <!--<i class="fa-solid fa-thumbtack"></i>-->
@@ -90,6 +95,7 @@
                 <h3 class="card">"Die Vorbeugung ist besser als die Behandlung"</h3>
             </div>
         </div>
+        <div class="main-dbtn"><a class="main-btn" href="#kalender">Termin buchen</a></div>
         <!--<div class="imgs">
             <img  class="home-img1" src="1.svg" alt="Doctor-Photo1">
             <img  class="home-img2" src="2.svg" alt="Doctor-Photo2">
@@ -110,10 +116,10 @@
                     <div class="inner">
                         <div class="front">
                             <div class="icon"><i class="fa-regular fa-calendar-check"></i></div>
-                            <a href="termin" class="card">Termin vereinbaren</a>
+                            <a href="#kalender" class="card">Termin vereinbaren</a>
                         </div>
                         <div class="back">
-                            <a href="">Klicken Sie bitte hier</a>
+                            <a href="#kalender">Klicken Sie bitte hier</a>
                         </div>
                     </div>
                 </div>
@@ -196,7 +202,7 @@
 
 
         <div id="seitenkopf">
-            <h1>Heute ist der: Samstag 31.12.2022</h1>
+            <h1>Heute ist der: Montag 19.12.2022</h1>
         </div>
         <div id="kalenderblatt">
             <table>
@@ -217,51 +223,54 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td class="woche">44</td>
-                        <td class="alt">31</td>
-                        <td id="day" name="1" onclick="time()">1</td>
-                        <td id="day" name="2" onclick="time()">2</td>
-                        <td id="day" name="3" onclick="time()">3</td>
-                        <td id="day" name="4" onclick="time()">4</td>
-                        <td id="day" name="5" onclick="time()">5</td>
-                        <td id="day" name="6" onclick="time()">6</td>
+                        <td class="woche">48</td>
+                        <td class="alt">28</td>
+                        <td class="alt">29</td>
+                        <td class="alt">30</td>
+                        <td id="day" onclick="time()">1</td>
+                        <td id="day" onclick="time()">2</td>
+                        <td id="day" onclick="time()">3</td>
+                        <td id="day" onclick="time()">4</td>
                     </tr>
                     <tr>
-                        <td class="woche">45</td>
-                        <td id="day" name="7" value="7" onclick="time()">7</td>
-                        <td id="day" name="8" onclick="time()">8</td>
+                        <td class="woche">49</td>
+                        <td id="day" onclick="time()">5</td>
+                        <td id="day" onclick="time()">6</td>
+                        <td id="day" onclick="time()">7</td>
+                        <td id="day" onclick="time()">8</td>
                         <td id="day" onclick="time()">9</td>
                         <td id="day" onclick="time()">10</td>
                         <td id="day" onclick="time()">11</td>
-                        <td id="day" onclick="time()">12</td>
-                        <td id="day" onclick="time()">13</td>
                     </tr>
                     <tr>
-                        <td class="woche">46</td>
+                        <td class="woche">50</td>
+                        <td id="day" onclick="time()">12</td>
+                        <td id="day" onclick="time()">13</td>
                         <td id="day" onclick="time()">14</td>
                         <td id="day" onclick="time()">15</td>
                         <td id="day" onclick="time()">16</td>
                         <td id="day" onclick="time()">17</td>
                         <td id="day" onclick="time()">18</td>
-                        <td id="day" onclick="time()">19</td>
-                        <td id="day" onclick="time()">20</td>
                     </tr>
                     <tr>
-                        <td class="woche">47</td>
+                        <td class="woche">51</td>
+                        <td id="day" onclick="time()" class="now">19</td>
+                        <td id="day" onclick="time()">20</td>
                         <td id="day" onclick="time()">21</td>
                         <td id="day" onclick="time()">22</td>
                         <td id="day" onclick="time()">23</td>
                         <td id="day" onclick="time()">24</td>
                         <td id="day" onclick="time()">25</td>
-                        <td id="day" onclick="time()">26</td>
-                        <td id="day" onclick="time()">27</td>
                     </tr>
                     <tr>
-                        <td class="woche">48</td>
+                        <td class="woche">52</td>
+                        <td id="day" onclick="time()">26</td>
+                        <td id="day" onclick="time()">27</td>
                         <td id="day" onclick="time()">28</td>
                         <td id="day" onclick="time()">29</td>
                         <td id="day" onclick="time()">30</td>
-                        <td id="day" onclick="time()" class="now">31</td>
+                        <td id="day" onclick="time()">31</td>
+                        <td class="alt">1</td>
                     </tr>
                 </tbody>
             </table>
@@ -520,9 +529,22 @@
     </section>
 
 
+
+    <footer>
+        <p>@ Copy Right</p>
+        <ul>
+            <li><a href="#" class="home1">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#kalender">Kalender</a></li>
+            <li><a href="#karriere">Karriere</a></li>
+            <li><a href="#kontakt">Kontakt</a></li>
+            <li><a href="#über-uns">Über uns</a></li>
+        </ul>
+    </footer>
+
     <script src="script.js"></script>
     <script src="Js/script.js"></script>
     <script src="Js/script1.js"></script>
 </body>
-<a href="https://storyset.com/office">Office illustrations by Storyset</a>
+<!--<a href="https://storyset.com/office">Office illustrations by Storyset</a>-->
 </html>
